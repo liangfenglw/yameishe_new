@@ -1,6 +1,6 @@
 
 <div class="foot">
-	<p>@2016-2020版权所有</p>
+	<p>© 1997-2017 版权所有</p>
       <div class="" id="go_top"><a title="返回顶部" href="#"></a></div>
  <script>
 $(function(){

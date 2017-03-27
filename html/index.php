@@ -48,7 +48,7 @@
 	</div>
 
 	<!--	可用余额等信息	-->
-	<div class="info_am clearfix">
+	<div class="info_am clearfix margin_top_40">
 		<div class="info_am_l clearfix">
 			<div class="circle1">
 				<h4>可用余额</h4>
@@ -74,276 +74,167 @@
 		</div>
 	</div>
 
-	<!--	投放分布	-->
-	<div class="tffb radius1">
+	<!--	图表	-->
+	<div class="tffb radius1 margin_top_40">
 		<h3 class="title1 hide"><strong><a href="#">投放分布</a></strong></h3>
 		<div class="tffb_m axis" id="tb1">
 		</div>
 	</div>
 	
-	<!--	任务管理	-->
-	<div class="rwgl radius1">
-		<h3 class="title1"><strong><a href="#">任务管理</a></strong>
-			<div class="search_1">
-				<form action="" method="" name="">
-					<div class="l">
-						<span>起始时间</span>
-					</div>
-					<div class="l">
-						<input type="text" class="txt2" id="datepicker1" />-<input type="text" class="txt2" id="datepicker2" />
-					</div>
-					<div class="l">
-						<input type="text" class="txt3" placeholder="请输入关键字" />
-						<input type="submit" name="submit" class="sub2" value="" />
-					</div>
-				</form>
-			</div>
-			<div class="clr"></div>
-		</h3>
-		<div class="rwgl_m">
-			<div class="tab1">
-				<ul>
-					<li class="cur"><a href="#">派单类<i class="num">120</i></a></li>
-					<li><a href="#">预约类</a></li>
-				</ul>
-				<select class="paixu">
-					<option value="">默认排序</option>
-					<option value="">ID号</option>
-					<option value="">名称</option>
-					<option value="">类型</option>
-					<option value="">时间</option>
-					<option value="">实际消费</option>
-				</select>
-			</div>
-			<div class="tab1_body">
-<table class="table_in1 cur" id="datatable1">
-<thead>
-	<tr>
-		<th>ID号</th>
-		<th>名称</th>
-		<th><select>
-				<option>类型</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-			</select>
-		</th>
-		<th>时间</th>
-		<th>实际消费/元</th>
-		<th class="nosort"><select>
-				<option>状态</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-			</select></th>
-		<th class="nosort">操作</th>
-	</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>1sdf100000815</td>
-		<td>5互联网大数据新闻编写</td>
-		<td>3文案策划</td>
-		<td>2016-10-12  15:12:00</td>
-		<td>1600</td>
-		<td>预约状态</td>
-		<td><select>
-				<option>删除</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-			</select></td>
-	</tr>
-	<tr>
-		<td>2sdf100000815</td>
-		<td>4互联网大数据新闻编写</td>
-		<td>7文案策划</td>
-		<td>2017-9-12  15:12:00</td>
-		<td>600</td>
-		<td>预约状态</td>
-		<td><select>
-				<option>删除</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-			</select></td>
-	</tr>
-	<tr>
-		<td>3sdf100000815</td>
-		<td>1互联网大数据新闻编写</td>
-		<td>文案策划</td>
-		<td>2016-9-12  16:12:00</td>
-		<td>600</td>
-		<td>6预约状态</td>
-		<td><select>
-				<option>删除</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-			</select></td>
-	</tr>
-	<tr>
-		<td>sdf100000815</td>
-		<td>3互联网大数据新闻编写</td>
-		<td>2文案策划</td>
-		<td>2016-9-12  15:12:00</td>
-		<td>6200</td>
-		<td>3预约状态</td>
-		<td><select>
-				<option>1删除</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-			</select></td>
-	</tr>
-	<tr>
-		<td>sdf100000815</td>
-		<td>互联网大数据新闻编写</td>
-		<td>文案策划</td>
-		<td>2016-9-12  15:13:00</td>
-		<td>6231400</td>
-		<td>35预约状态</td>
-		<td><select>
-				<option>2删除</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-			</select></td>
-	</tr>
-	<tr>
-		<td>sdf100000815</td>
-		<td>互联网大数据新闻编写</td>
-		<td>文案策划</td>
-		<td>2016-9-12  15:12:00</td>
-		<td>600</td>
-		<td>预约状态</td>
-		<td><select>
-				<option>删除</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-			</select></td>
-	</tr>
-</tbody>
-</table>
-<table class="table_in1" id="datatable2">
-<thead>
-	<tr>
-		<th>ID号</th>
-		<th>名称</th>
-		<th><select>
-				<option>类型</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-			</select>
-		</th>
-		<th>时间</th>
-		<th>实际消费/元</th>
-		<th class="nosort"><select>
-				<option>状态</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-			</select></th>
-		<th class="nosort">操作</th>
-	</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>sdf100000815</td>
-		<td>3互联网大数据新闻编写</td>
-		<td>2文案策划</td>
-		<td>2016-9-12  15:12:00</td>
-		<td>6200</td>
-		<td>3预约状态</td>
-		<td><select>
-				<option>1删除</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-			</select></td>
-	</tr>
-	<tr>
-		<td>sdf100000815</td>
-		<td>互联网大数据新闻编写</td>
-		<td>文案策划</td>
-		<td>2016-9-12  15:13:00</td>
-		<td>6231400</td>
-		<td>35预约状态</td>
-		<td><select>
-				<option>2删除</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-			</select></td>
-	</tr>
-	<tr>
-		<td>sdf100000815</td>
-		<td>互联网大数据新闻编写</td>
-		<td>文案策划</td>
-		<td>2016-9-12  15:12:00</td>
-		<td>600</td>
-		<td>预约状态</td>
-		<td><select>
-				<option>删除</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-			</select></td>
-	</tr>
-</tbody>
-</table>
-			</div>
-			<div class="page_1">
-				<span class="info">显示第1到1条派单订单，共1条派单订单</span>
-				<span class="pages">
-<a href="" class="prev">上一页</a>
-<a href="" class="cur">1</a>
-<a href="">2</a>
-<a href="">3</a>
-<a href="">4</a>
-<a href="">5</a>
-<span class="sus">...</span>
-<a href="">248</a>
-<a href="" class="next">下一页</a>
-				</span>
+	<div class="clearfix margin_top_40">
+		<!--	最新受理订单	-->
+		<div class="rwgl radius1">
+			<h3 class="title1"><strong><a href="#">最新受理订单</a></strong>
+				<a href="" class="more">more>></a>
+			</h3>
+			<div class="rwgl_m">
+
+				<div class="tab1_body">
+				
+	<table class="table_in1 cur">
+		<thead>
+			<tr>
+				<th>订单号</th>
+				<th>订单类型</th>
+				<th>订单状态</th>		<!--	（受理，未受理）	-->
+				<th>生成时间</th>
+				<th>金额</th>
+				<th>操作</th>			<!--	（查看）	-->
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>sdf100000815</td>
+				<td>互联网大数据新闻编写</td>
+				<td>受理</td>
+				<td>2016-9-12 15:12:00</td>
+				<td>600</td>
+				<td><a href="">查看</a></td>
+			</tr>
+			<tr>
+				<td>sdf100000815</td>
+				<td>互联网大数据新闻编写</td>
+				<td>未受理</td>
+				<td>2016-9-12 15:12:00</td>
+				<td>600</td>
+				<td><a href="">查看</a></td>
+			</tr>
+			<tr>
+				<td>sdf100000815</td>
+				<td>互联网大数据新闻编写</td>
+				<td>未受理</td>
+				<td>2016-9-12 15:12:00</td>
+				<td>600</td>
+				<td><a href="">查看</a></td>
+			</tr>
+			<tr>
+				<td>sdf100000815</td>
+				<td>互联网大数据新闻编写</td>
+				<td>未受理</td>
+				<td>2016-9-12 15:12:00</td>
+				<td>600</td>
+				<td><a href="">查看</a></td>
+			</tr>
+			<tr>
+				<td>sdf100000815</td>
+				<td>互联网大数据新闻编写</td>
+				<td>未受理</td>
+				<td>2016-9-12 15:12:00</td>
+				<td>600</td>
+				<td><a href="">查看</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+				</div>
 			</div>
 		</div>
-	
+		
+		<!--	新会员、新媒体商	-->
+		<div class="member-media">
+			<div class="tab2">
+				<ul class="clearfix">
+					<li class="cur"><a href="javascript:void(0)">新会员</a></li>
+					<li><a href="javascript:void(0)">新媒体商</a></li>
+				</ul>
+			</div>
+			<div class="tab2_body">
+				<ul class="clearfix" style="display:block;">
+					<li><a href="" title="昵称昵称昵称昵称昵称昵称昵称昵称"><img src="/images/pic4.jpg" alt="" /><p>昵称昵称昵称昵称昵称昵称昵称昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
+				</ul>
+				<ul class="clearfix" style="display:none;">
+					<li><a href="" title="北京新闻网北京新闻网北京新闻网"><img src="/images/pic4.jpg" alt="" /><p>北京新闻网北京新闻网北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
+				</ul>
+			</div>
+		</div>
+		
 	</div>
 
 	<!--	新闻中心、盈利状况、联系我们	-->
-	<div class="box_1 clearfix">
+	<div class="box_1 clearfix margin_top_40">
 		<div class="row3 row3_1 radius1">
-			<h3 class="title1"><strong><a href="#">新闻中心</a></strong></h3>
+			<h3 class="title2"><strong><a href="#">新闻中心</a></strong></h3>
 			<ul>
-				<li class="clearfix"><a href="">你的任务已经被某某媒体商确认电视广告精准投放已经实现</a><span>2016-9-16</span></li>
-				<li class="clearfix"><a href="">你的任务已经被某某媒体商确认电视广告精准投放已经实现</a><span>2016-9-16</span></li>
-				<li class="clearfix"><a href="">你的任务已经被某某媒体商确认电视广告精准投放已经实现</a><span>2016-9-16</span></li>
-				<li class="clearfix"><a href="">你的任务已经被某某媒体商确认电视广告精准投放已经实现</a><span>2016-9-16</span></li>
+				<li class="clearfix"><a href="" title="你的任务已经被某某媒体商确认电视的任务已经被某某媒体商确认电视的任务已经被某某媒体商确认电视的任务已经被某某媒体商确认电视的任务已经被某某媒体商确认电视广告精准投放已经实现">你的任务已经被某某媒体商确认电视的任务已经被某某媒体商确认电视的任务已经被某某媒体商确认电视的任务已经被某某媒体商确认电视的任务已经被某某媒体商确认电视广告精准投放已经实现</a><span>2016-9-16</span></li>
+				<li class="clearfix"><a href="" title="你的任务已经被某某媒体商确认电视广告精准投放已经实现">你的任务已经被某某媒体商确认电视广告精准投放已经实现</a><span>2016-9-16</span></li>
+				<li class="clearfix"><a href="" title="你的任务已经被某某媒体商确认电视广告精准投放已经实现">你的任务已经被某某媒体商确认电视广告精准投放已经实现</a><span>2016-9-16</span></li>
+				<li class="clearfix"><a href="" title="你的任务已经被某某媒体商确认电视广告精准投放已经实现">你的任务已经被某某媒体商确认电视广告精准投放已经实现</a><span>2016-9-16</span></li>
 			</ul>
 			<div class="clr"></div>
 		</div>
 		<div class="row3 row3_2 radius1">
-			<h3 class="title1"><strong><a href="#">盈利状况</a></strong></h3>
+			<h3 class="title2"><strong><a href="#">盈利状况</a></strong></h3>
 			<ul>
 				<li class="li1">
-					<p>分销会员总收益<br/>
+					<p>会员总金额<br/>
 						<b>￥2100.00</b></p>
 					<span></span></li>
 				<li class="li2">
-					<p>纯分销收益<br/>
+					<p>平台纯收益<br/>
 						<b>￥1100.00</b></p>
 					<span></span></li>
 				<li class="li3">
-					<p>占账户总收益率<br/>
-						<b>25%</b></p>
+					<p>供应商总金额<br/>
+						<b>￥1100.00</b></p>
 					<span></span></li>
 			</ul>
 		</div>
 		<div class="row3 row3_3 radius1">
-			<h3 class="title1"><strong><a href="#">联系我们</a></strong></h3>
+			<h3 class="title2"><strong><a href="#">联系我们</a></strong></h3>
 			<div class="row3_3_m">
 				<p>请输入你的电话号码<br/>
 					稍后即可接到我们的来电。</p>
@@ -369,25 +260,20 @@
 <?php include("foot.php"); ?>
 
 <script type="text/javascript">
-/*	日历	*/
-var picker1 = new Pikaday({
-	field: document.getElementById('datepicker1'),
-	firstDay: 1,
-	minDate: new Date('2000-01-01'),
-	maxDate: new Date('2020-12-31'),
-	yearRange: [2000,2020]
+$(function(){
+	
+	$(".tab2 li a").click(function(){
+		var index = $(this).parent().index();
+		console.log(index);
+		$(this).parent().addClass("cur").siblings().removeClass("cur");
+		$(this).closest(".tab2").next(".tab2_body").find("ul").eq(index).css("display","block").siblings("ul").css("display","none");
+		return false;
+	});
+	
 });
-var picker2 = new Pikaday({
-	field: document.getElementById('datepicker2'),
-	firstDay: 1,
-	minDate: new Date('2000-01-01'),
-	maxDate: new Date('2020-12-31'),
-	yearRange: [2000,2020]
-});
-
 </script>
 
-	<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
 
 </body>
 </html>
