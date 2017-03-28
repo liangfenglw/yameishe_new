@@ -6,20 +6,7 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 
-	<link href="css/reset.css" rel="stylesheet" type="text/css" />
-	<link href="css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-	<link href="css/style2.css" rel="stylesheet" type="text/css" />
-
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
-	<script type="text/javascript" src="js/jquery.touchslider.min.js"  type="text/javascript"></script>
-	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
-	<script type="text/javascript" src="js/main2.js"></script>
-	<script type="text/javascript" src="js/jquery.tools.min.js"></script>
-	
-	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript" src="js/echarts.min.js"></script>
+	<?php include("cssjs.php"); ?>
 	
 </head>
 <body>
@@ -234,16 +221,6 @@
 <script type="text/javascript">
 $(function(){
 	
-	$(".tab2 li a").click(function(){
-		var index = $(this).parent().index();
-		console.log(index);
-		$(this).parent().addClass("cur").siblings().removeClass("cur");
-		$(this).closest(".tab2").next(".tab2_body").find("ul").eq(index).css("display","block").siblings("ul").css("display","none");
-		return false;
-	});
-	
-
-	
 	/*	任务管理 分页	*/
 	var datatable;
 	var dt_option = {
@@ -277,8 +254,6 @@ $(function(){
 	datatable =  $('#datatable1').DataTable(dt_option);
 });
 </script>
-
-<script type="text/javascript" src="js/echarts.min.js"></script>
 
 </body>
 </html>

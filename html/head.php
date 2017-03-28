@@ -51,86 +51,90 @@
 			</div>
 			<div class="sidepanel-open-button"></div>
 		</div>
-        <div style="abackground:#f4f4f5; float:left;height:auto;padding-bottom:30px;" >
-        	<div class="IIO_nt">购物车共：<span>20</span>个</div>
-			<div class="IIO_line"></div>
-            <ul class="ITorder"  id="apDiv1">
-            	<li><a href="">
-                    <div class="GWxuanxiang"><input type="checkbox" name="checkItem" ></div>
-                	<div class="IOimg"><img src="/images/avatar.png" />
+        <div style="float:left;height:auto;padding-bottom:30px;" >
+			<form action="car.php" method="post" id="form_tcar">
+				<div class="IIO_nt">购物车共：<span>20</span>个</div>
+				<div class="IIO_line"></div>
+				<ul class="ITorder"  id="apDiv1">
+					<li><a href="">
+						<div class="GWxuanxiang"><input type="checkbox" name="checkItem_tcar" data_id="1" data-price="1.01" /></div>
+						<div class="IOimg"><img src="/images/avatar.png" />
+							</div>
+						<div class="IOtext">
+							<h3>订单名称</h3>
+							<p>￥1.00</p>
 						</div>
-                    <div class="IOtext">
-                    	<h3>订单名称</h3>
-                        <p>￥21.00</p>
-                    </div>
-                </a></li>
-                <li><a href="">
-                    <div class="GWxuanxiang"><input type="checkbox" name="checkItem" ></div>
-                	<div class="IOimg"><img src="/images/avatar.png" />
-                    </div>
-                    <div class="IOtext">
-                    	<h3>订单名称</h3>
-                        <p>￥21.00</p>
-                    </div>
-                </a></li><li><a href="">
-                    <div class="GWxuanxiang"><input type="checkbox" name="checkItem" ></div>
-                	<div class="IOimg"><img src="/images/avatar.png" />
-                    </div>
-                    <div class="IOtext">
-                    	<h3>订单名称</h3>
-                        <p>￥21.00</p>
-                    </div>
-                </a></li>
-                <li><a href="">
-                    <div class="GWxuanxiang"><input type="checkbox" name="checkItem" ></div>
-                	<div class="IOimg"><img src="/images/avatar.png" />
-                    </div>
-                    <div class="IOtext">
-                    	<h3>订单名称</h3>
-                        <p>￥21.00</p>
-                    </div>
-                </a></li>
-                <li><a href="">
-                    <div class="GWxuanxiang"><input type="checkbox" name="checkItem" ></div>
-                	<div class="IOimg"><img src="/images/avatar.png" />
-                    </div>
-                    <div class="IOtext">
-                    	<h3>订单名称</h3>
-                        <p>￥21.00</p>
-                    </div>
-                </a></li>
-                <li><a href="">
-                    <div class="GWxuanxiang"><input type="checkbox" name="checkItem" ></div>
-                	<div class="IOimg"><img src="/images/avatar.png" />
-                    </div>
-                    <div class="IOtext">
-                    	<h3>订单名称</h3>
-                        <p>￥21.00</p>
-                    </div>
-                </a></li>
-                <li><a href="">
-                    <div class="GWxuanxiang"><input type="checkbox" name="checkItem" ></div>
-                	<div class="IOimg"><img src="/images/avatar.png" />
-                    </div>
-                    <div class="IOtext">
-                    	<h3>订单名称</h3>
-                        <p>￥21.00</p>
-                    </div>
-                </a></li>
-                <li><a href="">
-                    <div class="GWxuanxiang"><input type="checkbox" name="checkItem" ></div>
-                	<div class="IOimg"><img src="/images/avatar.png" />
-                    </div>
-                    <div class="IOtext">
-                    	<h3>订单名称</h3>
-                        <p>￥21.00</p>
-                    </div>
-                </a></li>
-            </ul>
-            <div class="IObu">
-				<p>合计    130.00元</p>
-				<input type="submit" name="button" id="button" value="提交支付" class="TOUbutton"/>
-			</div>
+					</a></li>
+					<li><a href="">
+						<div class="GWxuanxiang"><input type="checkbox" name="checkItem_tcar" data_id="2" data-price="2.10" /></div>
+						<div class="IOimg"><img src="/images/avatar.png" />
+						</div>
+						<div class="IOtext">
+							<h3>订单名称</h3>
+							<p>￥2.00</p>
+						</div>
+					</a></li><li><a href="">
+						<div class="GWxuanxiang"><input type="checkbox" name="checkItem_tcar" data_id="3" data-price="3.00" /></div>
+						<div class="IOimg"><img src="/images/avatar.png" />
+						</div>
+						<div class="IOtext">
+							<h3>订单名称</h3>
+							<p>￥3.00</p>
+						</div>
+					</a></li>
+					<li><a href="">
+						<div class="GWxuanxiang"><input type="checkbox" name="checkItem_tcar" data_id="3" data-price="21.00" /></div>
+						<div class="IOimg"><img src="/images/avatar.png" />
+						</div>
+						<div class="IOtext">
+							<h3>订单名称</h3>
+							<p>￥21.00</p>
+						</div>
+					</a></li>
+					<li><a href="">
+						<div class="GWxuanxiang"><input type="checkbox" name="checkItem_tcar" data_id="3" data-price="21.00" /></div>
+						<div class="IOimg"><img src="/images/avatar.png" />
+						</div>
+						<div class="IOtext">
+							<h3>订单名称</h3>
+							<p>￥21.00</p>
+						</div>
+					</a></li>
+					<li><a href="">
+						<div class="GWxuanxiang"><input type="checkbox" name="checkItem_tcar" data_id="3" data-price="21.00" /></div>
+						<div class="IOimg"><img src="/images/avatar.png" />
+						</div>
+						<div class="IOtext">
+							<h3>订单名称</h3>
+							<p>￥21.00</p>
+						</div>
+					</a></li>
+					<li><a href="">
+						<div class="GWxuanxiang"><input type="checkbox" name="checkItem_tcar" data_id="3" data-price="21.00" /></div>
+						<div class="IOimg"><img src="/images/avatar.png" />
+						</div>
+						<div class="IOtext">
+							<h3>订单名称</h3>
+							<p>￥21.00</p>
+						</div>
+					</a></li>
+					<li><a href="">
+						<div class="GWxuanxiang"><input type="checkbox" name="checkItem_tcar" data_id="3" data-price="21.00" /></div>
+						<div class="IOimg"><img src="/images/avatar.png" />
+						</div>
+						<div class="IOtext">
+							<h3>订单名称</h3>
+							<p>￥21.00</p>
+						</div>
+					</a></li>
+				</ul>
+				<div class="IObu">
+					<p>合计 <span id="price_tcar" style="color:#f00;">0</span> 元</p>
+					<input type="hidden" name="order_tcar" value="" />
+					<input type="hidden" name="totalprice_tcar" value="0" />
+					<input type="submit" name="button" id="button" value="提交支付" class="TOUbutton"/>
+				</div>
+			</form>
         </div>
     </div>
 

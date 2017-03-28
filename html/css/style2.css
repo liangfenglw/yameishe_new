@@ -1003,11 +1003,11 @@ ul.ul_top li a{	font-size:16px;	color:#999999;	}
 .ITorder{	padding:0px 0px 0px 18px;	width:auto;	height:490px;	float:left;	margin-bottom:10px;	}
 .ITorder li{	height:47px;	overflow:hidden;	padding:0px 20px 0px 0px;	margin:10px 0 15px;	width:100%;	display:block;
 	padding:12px 20px 13px 0px;	margin:0px 0 0px;		}
-.GWxuanxiang{	width:auto;	margin:14px 14px 0 0;	}
+.GWxuanxiang{	width:auto;	margin:18px 14px 0 0;	}
 .IOimg{		width:48px; height:47px; float:left; position:relative; margin-right:15px;	}
 .IOimg img{ width:48px; height:47px;	border-radius:5px;	}
 .IOtext{ 	line-height:22px;	 width:160px; height:auto; float:left;	}
-.IOtext h3{ font-size:16px; line-height:30px; color:#8894a4; font-weight:400;	}
+.IOtext h3{ font-size:16px; line-height:1.5; color:#8894a4; font-weight:400;	}
 .IOtext p{ 	color:#8894a4;font-size:16px; line-height:20px;	font-weight:400;	}
 .IObu{	float:left;	width:100%;	height:auto;	margin-top:20px;	}
 .IObu p{	color:#8894a4;	font-size:16px;	line-height:24px;	padding:13px 0 13px 30px;	}
@@ -1027,7 +1027,7 @@ ul.ul_top li a{	font-size:16px;	color:#999999;	}
 .info_am_l{	width:29%;	float:left;		background:#fff;	border-radius:10px;	box-shadow:2px 2px 2px #eee;	padding-bottom:30px;	}
 .info_am_l .circle1{	width:177px;	height:177px;	margin:44px auto 0;	position:relative;
 	abackground:url(../images/bg_circle1.png) no-repeat center center;
-	abackground:#F3F3F4;	border-radius:89px;	border:2px solid #D9F9F2;	}
+	aborder-radius:89px;	aborder:2px solid #D9F9F2;	}
 .info_am_l .circle1 h4{	font-size:16px;	color:#2f4050;	text-align:center;	padding-top:46px;	line-height:22px;	font-weight:400;	}
 .info_am_l .circle1 p{	font-size:36px;	font-size:32px;	color:#2f4050;	text-align:center;	line-height:40px;	}
 #tb3{	width:120%;	height:120%;	position:absolute;	left:-10%;	top:-10%;	overflow:visible;	}

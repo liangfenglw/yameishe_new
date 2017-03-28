@@ -224,17 +224,17 @@ function setMenuColor(str){
 
 $(function(){
 
-/*	左侧边打开	*/
+	/*	左侧边打开	*/
 	setMenuColor("show");
 
-/*	左侧边关闭	*/
-//	setMenuColor("show");
-//	$(".sidebar-open-button").click();
+	/*	左侧边关闭	*/
+	//	setMenuColor("show");
+	//	$(".sidebar-open-button").click();
 	
 	
 	/*	订单统计 图表	*/
 	if( $('#tb2').length > 0 ){
-		var myChart2 = echarts.init($('#tb2')[0]);
+		var myChart2 = echarts.init(document.getElementById('tb2'));
 		option2 = {
 			title : { show: false },
 			tooltip : {
@@ -276,13 +276,13 @@ $(function(){
 	
 	/*	可用余额 图表	*/
 	if( $('#tb3').length > 0 ){
-		var myChart3 = echarts.init($('#tb3')[0]);
+		var myChart3 = echarts.init(document.getElementById('tb3'));
 		option3 = {
 			tooltip: {
 				trigger: 'item',
 				formatter: "{a} <br/>{b}: {c} ({d}%)"
 			},
-			color:['#1ab394', '#f3f3f4'],
+			color:['#1ab394', '#aaa'],
 			legend: {
 				show: false,
 				orient: 'vertical',
