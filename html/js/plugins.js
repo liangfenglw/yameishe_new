@@ -205,7 +205,8 @@ function setMenuColor(str){
 			$(".menu a").each(function(){
 				var href1 = $.trim($(this).attr("href"));
 				var href2 = window.location.href;
-				if( href1 != "" && href1 != "#" &&  ( href2 == href1 || href2.indexOf(href1) >= 0 ) ){
+//				if( href1 != "" && href1 != "#" &&  ( href2 == href1 || href2.indexOf(href1) >= 0 ) ){
+				if( href1 != "" && href1 != "#" && href2 == href1 ){
 					$(this).parents(".menu").css("display","block").prev(".header").addClass("inactives");
 					$(this).parent("li").addClass("cur");
 				}
@@ -213,7 +214,8 @@ function setMenuColor(str){
 			$(".header .label a").each(function(){
 				var href1 = $.trim($(this).attr("href"));
 				var href2 = window.location.href;
-				if( href1 != "" && href1 != "#" &&  ( href2 == href1 || href2.indexOf(href1) >= 0 ) ){
+//				if( href1 != "" && href1 != "#" &&  ( href2 == href1 || href2.indexOf(href1) >= 0 ) ){
+				if( href1 != "" && href1 != "#" && href2 == href1 ){
 					$(this).closest(".header").addClass("active");
 				}
 			});
@@ -222,12 +224,104 @@ function setMenuColor(str){
 
 $(function(){
 
+/*	左侧边打开	*/
 	setMenuColor("show");
-	$(".sidebar-open-button").click();
+
+/*	左侧边关闭	*/
+//	setMenuColor("show");
+//	$(".sidebar-open-button").click();
 	
 	
+	/*	订单统计 图表	*/
+	if( $('#tb2').length > 0 ){
+		var myChart2 = echarts.init($('#tb2')[0]);
+		option2 = {
+			title : { show: false },
+			tooltip : {
+				trigger: 'item',
+				formatter: "{a} <br/>{b} : {c} ({d}%)"
+			},
+			legend: {
+				orient: 'vertical',
+				left: 'right',
+				top: 'center',
+				align: 'left',
+				data: ['完成','未完成','流放','预约状态','退还']
+			},
+			series : [
+				{
+					name: '访问来源',
+					type: 'pie',
+					radius : '80%',
+					center: ['40%', '50%'],
+					data:[
+						{value:2000, name:'完成'},
+						{value:1000, name:'未完成'},
+						{value:500, name:'流放'},
+						{value:200, name:'预约状态'},
+						{value:100, name:'退还'}
+					],
+					itemStyle: {
+						emphasis: {
+							shadowBlur: 10,
+							shadowOffsetX: 0,
+							shadowColor: 'rgba(0, 0, 0, 0.5)'
+						}
+					}
+				}
+			]
+		};
+		myChart2.setOption(option2);
+	}
 	
-	
+	/*	可用余额 图表	*/
+	if( $('#tb3').length > 0 ){
+		var myChart3 = echarts.init($('#tb3')[0]);
+		option3 = {
+			tooltip: {
+				trigger: 'item',
+				formatter: "{a} <br/>{b}: {c} ({d}%)"
+			},
+			color:['#1ab394', '#f3f3f4'],
+			legend: {
+				show: false,
+				orient: 'vertical',
+				x: 'left',
+				data:['可用余额','不可用余额']
+			},
+			series: [
+				{
+					name:'余额',
+					type:'pie',
+					radius: ['70%', '84%'],
+					avoidLabelOverlap: false,
+					label: {
+						normal: {
+							show: false,
+							position: 'center'
+						},
+						emphasis: {
+							show: false,
+							textStyle: {
+								fontSize: '20',
+								fontWeight: 'bold'
+							}
+						}
+					},
+					labelLine: {
+						normal: {
+							show: false
+						}
+					},
+					data:[
+						{value:2356636, name:'可用余额'},
+						{value:1600000, name:'不可用余额'}
+					]
+				}
+			]
+		};
+		myChart3.setOption(option3);	
+	}
 	
 	
 	

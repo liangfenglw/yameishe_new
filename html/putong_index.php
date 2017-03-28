@@ -2,11 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>管理员首页 - 亚媒社</title>
+	<title>普通会员首页 - 亚媒社</title>
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 
 	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 	<link href="css/style2.css" rel="stylesheet" type="text/css" />
 
@@ -17,11 +18,14 @@
 	<script type="text/javascript" src="js/main2.js"></script>
 	<script type="text/javascript" src="js/jquery.tools.min.js"></script>
 	
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+	
 </head>
 <body>
 
 <?php include("head.php"); ?>
-<?php include("side_l_admin.php"); ?>			<!--	左弹菜单 管理员首页	-->
+<?php include("side_l_user.php"); ?>			<!--	左弹菜单 普通会员首页	-->
 
 <div class="content"><div class="Invoice"><div class="INa1dd">
 <div class="main">
@@ -46,6 +50,7 @@
 		</div>
 	</div>
 
+
 	<!--	可用余额等信息	-->
 	<div class="info_am clearfix margin_top_40">
 		<div class="info_am_l clearfix">
@@ -58,20 +63,27 @@
 				</div>
 			</div>
 			<ul class="clearfix">
-				<li class="col-2"><a href=""><img src="/images/ico_yue.png" />账户余额</a></li>
-				<li class="col-2"><a href=""><img src="/images/ico_mingxi.png" />收支明细</a></li>
+				<li class="col-3"><a href=""><img src="/images/ico_yue.png" />账户余额</a></li>
+				<li class="col-3"><a href=""><img src="/images/ico_tixian.png" />申请提现</a></li>
+				<li class="col-3"><a href=""><img src="/images/ico_mingxi.png" />收支明细</a></li>
 			</ul>
 		</div>
 		<div class="info_am_r">
 			<ul class="clearfix">
 				<li class="col-3"><div class="circle2"><img src="/images/ico_dingdan.png" /><i>2</i></div>
-					<h4><a href="">平台订单</a></h4>
+					<h4><a href="">我的订单</a></h4>
 					<p>21234 条</p></li>
-				<li class="col-3"><div class="circle2"><img src="/images/ico_ziyuan.png" /><i>22222</i></div>
-					<h4><a href="">平台资源</a></h4>
+				<li class="col-3"><div class="circle2"><img src="/images/ico_ziyuan.png" /><i>22</i></div>
+					<h4><a href="">我的购物车</a></h4>
 					<p>21234 条</p></li>
-				<li class="col-3"><div class="circle2"><img src="/images/ico_yonghu.png" /><i>222</i></div>
-					<h4><a href="">平台用户</a></h4>
+				<li class="col-3">
+					<div class="circle3">
+						<!--	图表	-->
+						<div id="tb2">
+							
+						</div>
+					</div>
+					<h4><a href="">订单统计</a></h4>
 					<p>21234 个</p></li>
 			</ul>
 		</div>
@@ -84,17 +96,14 @@
 		</div>
 	</div>
 	
-	<div class="clearfix margin_top_40">
-		<!--	最新受理订单	-->
-		<div class="rwgl radius1">
-			<h3 class="title1"><strong><a href="#">最新受理订单</a></strong>
-				<a href="" class="more">more>></a>
-			</h3>
+	<!--	任务管理	-->
+	<div class="rwgl radius1 margin_top_40 clearfix" style="width:100%;float:none;">
+			<h3 class="title1"><strong><a href="#">任务管理</a></strong></h3>
 			<div class="rwgl_m">
 
 				<div class="tab1_body">
 				
-	<table class="table_in1 cur">
+	<table class="table_in1 cur" id="datatable1">
 		<thead>
 			<tr>
 				<th>订单号</th>
@@ -103,7 +112,7 @@
 				<th>订单状态</th>		<!--	（受理，未受理）	-->
 				<th>生成时间</th>
 				<th>金额</th>
-				<th>操作</th>			<!--	（查看）	-->
+				<th class="nosort">操作</th>			<!--	（查看）	-->
 			</tr>
 		</thead>
 		<tbody>
@@ -120,7 +129,25 @@
 				<td>sdf100000815</td>
 				<td>文案策划</td>
 				<td>互联网大数据新闻编写</td>
+				<td>未受理</td>
+				<td>2016-9-12 15:12:00</td>
+				<td class="color1">￥228.00</td>
+				<td><a href="" class="color2">查看</a></td>
+			</tr>
+			<tr>
+				<td>sdf100000815</td>
+				<td>文案策划</td>
+				<td>互联网大数据新闻编写</td>
 				<td>受理</td>
+				<td>2016-9-12 15:12:00</td>
+				<td class="color1">￥228.00</td>
+				<td><a href="" class="color2">查看</a></td>
+			</tr>
+			<tr>
+				<td>sdf100000815</td>
+				<td>文案策划</td>
+				<td>互联网大数据新闻编写</td>
+				<td>未受理</td>
 				<td>2016-9-12 15:12:00</td>
 				<td class="color1">￥228.00</td>
 				<td><a href="" class="color2">查看</a></td>
@@ -157,60 +184,6 @@
 
 				</div>
 			</div>
-		</div>
-		
-		<!--	新会员、新媒体商	-->
-		<div class="member-media">
-			<div class="tab2">
-				<ul class="clearfix">
-					<li class="cur"><a href="javascript:void(0)">新会员</a></li>
-					<li><a href="javascript:void(0)">新媒体商</a></li>
-				</ul>
-			</div>
-			<div class="tab2_body">
-				<ul class="clearfix" style="display:block;">
-					<li><a href="" title="昵称昵称昵称昵称昵称昵称昵称昵称"><img src="/images/pic4.jpg" alt="" /><p>昵称昵称昵称昵称昵称昵称昵称昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-				</ul>
-				<ul class="clearfix" style="display:none;">
-					<li><a href="" title="北京新闻网北京新闻网北京新闻网"><img src="/images/pic4.jpg" alt="" /><p>北京新闻网北京新闻网北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-				</ul>
-			</div>
-		</div>
-		
 	</div>
 
 	<!--	新闻中心、盈利状况、联系我们	-->
@@ -226,21 +199,11 @@
 			<div class="clr"></div>
 		</div>
 		<div class="row3 row3_2 radius1">
-			<h3 class="title2"><strong><a href="#">盈利状况</a></strong></h3>
-			<ul>
-				<li class="li1">
-					<p>会员总金额<br/>
-						<b>￥2100.00</b></p>
-					<span></span></li>
-				<li class="li2">
-					<p>平台纯收益<br/>
-						<b>￥1100.00</b></p>
-					<span></span></li>
-				<li class="li3">
-					<p>供应商总金额<br/>
-						<b>￥1100.00</b></p>
-					<span></span></li>
-			</ul>
+			<h3 class="title2"><strong><a href="#">会员升级</a></strong></h3>
+			<div class="m_row3_2">
+				<img src="images/huiyuan_update.png" />
+				<p>会员升级，拥有独立账户管理分销业务，自由选择添加管理分销账户，灵活设置账户信息等等。</p>
+			</div>
 		</div>
 		<div class="row3 row3_3 radius1">
 			<h3 class="title2"><strong><a href="#">联系我们</a></strong></h3>
@@ -279,6 +242,39 @@ $(function(){
 		return false;
 	});
 	
+
+	
+	/*	任务管理 分页	*/
+	var datatable;
+	var dt_option = {
+		"searching" : false,		//是否允许Datatables开启本地搜索
+		"paging" : true,			//是否开启本地分页
+		"pageLength" : 5,			//每页显示记录数
+		"lengthChange" : false,		//是否允许用户改变表格每页显示的记录数 
+		"lengthMenu": [ 5, 10, 100 ],		//用户可选择的 每页显示记录数
+		"info" : true,
+		"columnDefs" : [{
+	       	"targets": 'nosort',
+			"orderable": false
+		}],
+		"pagingType": "simple_numbers",
+		"language": {
+			"search": "搜索",
+			sZeroRecords : "没有查询到数据",
+			"info": "显示第 _PAGE_/_PAGES_ 页，共_TOTAL_条派单订单",
+			"infoFiltered": "(筛选自_MAX_条数据)",
+			"infoEmpty": "没有符合条件的数据",
+			oPaginate: {    
+				"sFirst" : "首页",
+				"sPrevious" : "上一页",
+				"sNext" : "下一页",
+				"sLast" : "尾页"    
+			},
+			searchPlaceholder: "过滤..."
+		},
+		"order" : [[3,"desc"]]
+	};
+	datatable =  $('#datatable1').DataTable(dt_option);
 });
 </script>
 
