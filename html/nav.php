@@ -11,6 +11,8 @@
 	<a href="index.php">管理员首页</a>
 	<a href="putong_index.php">普通会员首页</a>
 	
+	<a href="help.php">帮助中心</a>
+	
 	<br/>
 
 </div>

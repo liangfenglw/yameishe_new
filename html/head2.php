@@ -1,8 +1,3 @@
-<script>
-	var lside = "";	/*	open 展开，close 收起	*/
-//	lside = "open";
-	lside = "close";
-</script>
 
 <div class="frame" id="top">
 	<div class="logo">

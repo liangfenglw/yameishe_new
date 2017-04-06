@@ -790,13 +790,13 @@ body{	background:#2f4050;		}
 .logo{	width:260px;	height:63px;	text-align:left;	background:#273a4a;	overflow:hidden;	}
 	.logo a{	width:168px;	height:47px;	margin:8px 0 0 40px;	float:left;	}
 	.logo img{	width:168px;	height:47px;	margin:0;	float:left;	}
-.logo.hidden{	width:70px;	}
-	.logo.hidden a{	width:41px;	height:36px;	margin:14px 0 0 14px;	overflow:hidden;	}
-	.logo.hidden img{	width:auto;	height:36px;	margin:0;	}
+html .logo.fold{	width:70px;	}
+	html .logo.fold a{	width:41px;	height:36px;	margin:14px 0 0 14px;	overflow:hidden;	}
+	html .logo.fold img{	width:auto;	height:36px;	margin:0;	}
 
 .sidebar{	width:260px;	overflow:hidden;	background:#2f4050;	}
-.sidebar.hidden{	width:70px;		}
-.sidebar.hidden .sidebar-panel .header{		padding-left:20px;	}
+html .sidebar.fold{	width:70px;		}
+html .sidebar.fold .sidebar-panel .header{		padding-left:20px;	}
 
 .sidebar-panel{	width:260px;	}
 .sidebar-panel .header{	height:30px;	line-height:30px;	padding:13px 0 13px 35px;	border-bottom:none;		color:#8894a4;	font-size:16px;	font-weight:400;
@@ -1020,6 +1020,7 @@ ul.ul_top li a{	font-size:16px;	color:#999999;	}
 
 
 .content{	margin-left:260px;	}
+html .content.fold{	margin-left:70px;	}
 .Invoice{	width:100%; height:auto; margin:auto;float:left; background:#F3F3F4;	}
 
 
@@ -1077,9 +1078,27 @@ ul.ul_top li a{	font-size:16px;	color:#999999;	}
 .info_am_r ul li .circle3{	width:110%;	height:177px;	margin:44px auto 0;	text-align:center;	position:relative;	left:-5%;	atop:-70px;	}
 #tb2{	margin:0px auto;	padding:0px 0 0;	width:100%;	height:177px;	}
 
+/*	帮助中心	*/
+.place{		color:#666666;	line-height:38px;	margin-top:20px;	}
+.place a{	color:#666666;		}
+.wrap_h{	background:#fff;	border-radius:15px;	min-height:1100px;	}
 
+.side_h{	width:15.6%;	width:280px;	float:left;		background:url(../images/line_h.png) repeat-y 270px 0;	}
+.side_h h3{			height:50px;	line-height:50px;	font-size:24px;	color:#1ab394;	font-size:400;	}
+.side_h h3 strong{	display:block;	border-bottom:1px solid #D4F1EB; 	padding-left:30px;		margin-right:10px;	font-weight:400;	}
+.side_h h3 a{	color:#1ab394;		}
+.side_h ul{		padding-bottom:10px;	}
+.side_h ul li{			height:45px;	overflow:hidden;	font-size:16px;	}
+.side_h ul li a{		color:#2f4050;	display:block;	line-height:30px;	padding:8px 0;	text-align:center;	}
+.side_h ul li.cur a,
+.side_h ul li a:hover{	color:#fff;		background:#1ab394;	background:url(../images/bg_h.png) no-repeat 0 0;	}
 
-
+.main_h{	width:78%;	float:left;	margin-left:3.5%;	padding:10px 0 30px 0;
+	display:block;	margin-left:280px;	amargin-left:340px;	float:none;		width:auto;		}
+.main_h ul{		margin:0 4%;	}
+.main_h ul li{		line-height:24px;	font-size:14px;	color:#2f4050;	margin:20px 0;	background:url(../images/dot.png) no-repeat 0 7px;	}
+.main_h ul li a{	color:#2f4050;		padding-left:22px;	display:block;	}
+.main_h ul li a:hover{	color:#1ab394;		}
 
 
 

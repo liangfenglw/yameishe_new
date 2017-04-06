@@ -230,24 +230,24 @@ $(function(){
 		"lengthChange" : false,		//是否允许用户改变表格每页显示的记录数 
 		"lengthMenu": [ 5, 10, 100 ],		//用户可选择的 每页显示记录数
 		"info" : true,
-		"columnDefs" : [{
+		"columnDefs" : {
 	       	"targets": 'nosort',
 			"orderable": false
-		}],
+		},
 		"pagingType": "simple_numbers",
 		"language": {
 			"search": "搜索",
-			sZeroRecords : "没有查询到数据",
+			"sZeroRecords" : "没有查询到数据",
 			"info": "显示第 _PAGE_/_PAGES_ 页，共_TOTAL_条派单订单",
 			"infoFiltered": "(筛选自_MAX_条数据)",
 			"infoEmpty": "没有符合条件的数据",
-			oPaginate: {    
+			"oPaginate": {    
 				"sFirst" : "首页",
 				"sPrevious" : "上一页",
 				"sNext" : "下一页",
 				"sLast" : "尾页"    
 			},
-			searchPlaceholder: "过滤..."
+			"searchPlaceholder": "过滤..."
 		},
 		"order" : [[3,"desc"]]
 	};

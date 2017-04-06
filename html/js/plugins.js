@@ -2,7 +2,7 @@
 $(document).ready(function() {
 //	$('.inactive').click(function(){
 	$('.header').click(function(){
-		if( $(".logo").hasClass("hidden") ){
+		if( $(".logo").hasClass("fold") ){
 			$(".sidebar-open-button").click();
 			if( $(this).hasClass("inactives") ){
 				return false;
@@ -42,19 +42,21 @@ $(document).ready(function(){
 $(document).ready(function(){
 
     $('.sidebar-open-button').on('click', function(){
-		if($('.sidebar').hasClass('hidden')){
-			$(".logo").removeClass("hidden");
-			$('.sidebar').removeClass('hidden');
-            $('.content').css({
+		if($('.sidebar').hasClass('fold')){
+			$(".logo").removeClass("fold");
+			$('.sidebar').removeClass('fold');
+            $('.content').removeClass('fold');
+/*             $('.content').css({
                 'marginLeft' : 260
             });
-			setMenuColor("show");
+ */			setMenuColor("show");
         }else{
-			$(".logo").addClass("hidden");
-			$('.sidebar').addClass('hidden');
-			$('.content').css({
+			$(".logo").addClass("fold");
+			$('.sidebar').addClass('fold');
+			$('.content').addClass('fold');
+/* 			$('.content').css({
                 'marginLeft' : 70
-            });
+            }); */
 			setMenuColor("hide");
         }
 		return false;
@@ -224,14 +226,7 @@ function setMenuColor(str){
 
 $(function(){
 
-	/*	左侧边打开	*/
-	setMenuColor("show");
 
-	/*	左侧边关闭	*/
-	//	setMenuColor("show");
-	//	$(".sidebar-open-button").click();
-	
-	
 	/*	订单统计 图表	*/
 	if( $('#tb2').length > 0 ){
 		var myChart2 = echarts.init(document.getElementById('tb2'));
