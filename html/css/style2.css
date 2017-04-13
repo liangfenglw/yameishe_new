@@ -1095,13 +1095,14 @@ html .content.fold{	margin-left:70px;	}
 
 .main_h{	width:78%;	float:left;	margin-left:3.5%;	padding:10px 0 30px 0;
 	display:block;	margin-left:280px;	amargin-left:340px;	float:none;		width:auto;		}
-.main_h ul{		margin:0 4%;	}
-.main_h ul li{		line-height:24px;	font-size:14px;	color:#2f4050;	margin:20px 0;	background:url(../images/dot.png) no-repeat 0 7px;	}
-.main_h ul li a{	color:#2f4050;		padding-left:22px;	display:block;	}
-.main_h ul li a:hover{	color:#1ab394;		}
+.main_h ul.list_mian_h{		margin:0 4%;	}
+.main_h ul.list_mian_h li{		line-height:24px;	font-size:14px;	color:#2f4050;	margin:20px 0;	background:url(../images/dot.png) no-repeat 0 7px;	}
+.main_h ul.list_mian_h li a{	color:#2f4050;		padding-left:22px;	display:block;	}
+.main_h ul.list_mian_h li a:hover{	color:#1ab394;		}
 
 
-
+h3.title_main_h{	margin:0 3%;	font-size:24px;	color:#2f4050;	line-height:40px;	padding:18px 5%;	border-bottom:1px dotted #91DACB;	font-weight:400;	text-align:center;	}
+.content_main_h{	margin:0 3%;	padding:30px 0;	line-height:30px;	font-size:14px;	color:#2f4050;	}
 
 
 
@@ -1117,11 +1118,14 @@ html .content.fold{	margin-left:70px;	}
 }
 #go_top a, #go_top a:hover {	width:20px;	height:21px;	overflow:hidden;	padding:0;	text-align:center;	display:block;	}
 	
-	
-	
-	
-	
-	
+/*	左导航收缩	*/
+body.fold{	}
+body.fold .logo{	width:70px;	}
+	body.fold .logo a{	width:41px;	height:36px;	margin:14px 0 0 14px;	overflow:hidden;	}
+	body.fold .logo img{	width:auto;	height:36px;	margin:0;	}
+body.fold .sidebar{	width:70px;		}
+body.fold .sidebar .sidebar-panel .header{		padding-left:20px;	}
+body.fold .content{	margin-left:70px;	}
 	
 	
 	

@@ -1,9 +1,3 @@
-<script>
-	var lside = "";	/*	open 展开，close 收起	*/
-//	lside = "open";
-	lside = "close";
-</script>
-
 <div class="frame" id="top">
 	<div class="logo">
 		<a href="index.php"><img src="/images/logo.png" alt="亚媒社" /></a>

@@ -24,15 +24,6 @@
 var t1=TouchScroll('apDiv1',{vOffset:0,mouseWheel:true,keyPress:false,color:'#999'})
 $(function(){
 	
-	if( lside == "open" ){
-		setMenuColor("show");			/*	左侧边打开	*/
-	}else if ( lside == "close" ){
-//		$(".logo,.sidebar,.content").addClass("fold");
-		setMenuColor("show");			/*	左侧边关闭	*/
-		$(".sidebar-open-button").click();
-	}
-	
-	
 	/*	右边会员中心入口弹窗	*/
 	$(".ITuser").click(function(){
 		$(".HYrukou").toggle();

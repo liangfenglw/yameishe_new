@@ -2,7 +2,7 @@
 $(document).ready(function() {
 //	$('.inactive').click(function(){
 	$('.header').click(function(){
-		if( $(".logo").hasClass("fold") ){
+		if( $("body").hasClass("fold") ){
 			$(".sidebar-open-button").click();
 			if( $(this).hasClass("inactives") ){
 				return false;
@@ -40,28 +40,19 @@ $(document).ready(function(){
 
 /* Sidebar Show-Hide */
 $(document).ready(function(){
-
+	if(!$('body').hasClass('fold')){
+		setMenuColor("show");	
+	}
     $('.sidebar-open-button').on('click', function(){
-		if($('.sidebar').hasClass('fold')){
-			$(".logo").removeClass("fold");
-			$('.sidebar').removeClass('fold');
-            $('.content').removeClass('fold');
-/*             $('.content').css({
-                'marginLeft' : 260
-            });
- */			setMenuColor("show");
+		if($('body').hasClass('fold')){
+ 			$("body").removeClass("fold");
+			setMenuColor("show");
         }else{
-			$(".logo").addClass("fold");
-			$('.sidebar').addClass('fold');
-			$('.content').addClass('fold');
-/* 			$('.content').css({
-                'marginLeft' : 70
-            }); */
+			$("body").addClass("fold");
 			setMenuColor("hide");
         }
 		return false;
     });
-	
 });
 
 

@@ -12,6 +12,7 @@
 	<a href="putong_index.php">普通会员首页</a>
 	
 	<a href="help.php">帮助中心</a>
+	<a href="help-view.php">帮助中心—查看</a>
 	
 	<br/>
 

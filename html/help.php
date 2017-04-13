@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>普通会员首页 - 亚媒社</title>
+	<title>帮助中心 - 亚媒社</title>
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 
@@ -12,7 +12,7 @@
 
 	</style>
 </head>
-<body>
+<body class="fold">			<!--	class="fold" 左导航收缩	-->
 
 <?php include("head.php"); ?>
 <?php include("side_l_user.php"); ?>			<!--	左弹菜单 普通会员首页	-->
@@ -61,25 +61,25 @@
 		</div>
 		
 		<div class="main_h">
-			<ul>
-				<li><a href="">【广告主】如何注册广告主</a></li>
-				<li><a href="">【广告主】如何进行账号充值</a></li>
-				<li><a href="">【广告主】广告主云自媒做什么？</a></li>
-				<li><a href="">【广告主】云自媒平台如何交易？</a></li>
-				<li><a href="">【广告主】云自媒如何保证推广效果？</a></li>
-				<li><a href="">【广告主】更多广告主保障服务，全面解决你的投放困惑更多广告主保障服务，全面解决你的投放困惑更多广告主保障服务，全面解决你的投放困惑更多广告主保障服务，全面解决你的投放困惑更多广告主保障服务，全面解决你的投放困惑更多广告主保障服务，全面解决你的投放困惑更多广告主保障服务，全面解决你的投放困惑</a></li>
-				<li><a href="">【广告主】如何注册广告主</a></li>
-				<li><a href="">【广告主】如何进行账号充值</a></li>
-				<li><a href="">【广告主】广告主云自媒做什么？</a></li>
-				<li><a href="">【广告主】云自媒平台如何交易？</a></li>
-				<li><a href="">【广告主】云自媒如何保证推广效果？</a></li>
-				<li><a href="">【广告主】更多广告主保障服务，全面解决你的投放困惑</a></li>
-				<li><a href="">【广告主】如何注册广告主</a></li>
-				<li><a href="">【广告主】如何进行账号充值</a></li>
-				<li><a href="">【广告主】广告主云自媒做什么？</a></li>
-				<li><a href="">【广告主】云自媒平台如何交易？</a></li>
-				<li><a href="">【广告主】云自媒如何保证推广效果？</a></li>
-				<li><a href="">【广告主】更多广告主保障服务，全面解决你的投放困惑</a></li>
+			<ul class="list_mian_h">
+				<li><a href="help-view.php">【广告主】如何注册广告主</a></li>
+				<li><a href="help-view.php">【广告主】如何进行账号充值</a></li>
+				<li><a href="help-view.php">【广告主】广告主云自媒做什么？</a></li>
+				<li><a href="help-view.php">【广告主】云自媒平台如何交易？</a></li>
+				<li><a href="help-view.php">【广告主】云自媒如何保证推广效果？</a></li>
+				<li><a href="help-view.php">【广告主】更多广告主保障服务，全面解决你的投放困惑更多广告主保障服务，全面解决你的投放困惑更多广告主保障服务，全面解决你的投放困惑更多广告主保障服务，全面解决你的投放困惑更多广告主保障服务，全面解决你的投放困惑更多广告主保障服务，全面解决你的投放困惑更多广告主保障服务，全面解决你的投放困惑</a></li>
+				<li><a href="help-view.php">【广告主】如何注册广告主</a></li>
+				<li><a href="help-view.php">【广告主】如何进行账号充值</a></li>
+				<li><a href="help-view.php">【广告主】广告主云自媒做什么？</a></li>
+				<li><a href="help-view.php">【广告主】云自媒平台如何交易？</a></li>
+				<li><a href="help-view.php">【广告主】云自媒如何保证推广效果？</a></li>
+				<li><a href="help-view.php">【广告主】更多广告主保障服务，全面解决你的投放困惑</a></li>
+				<li><a href="help-view.php">【广告主】如何注册广告主</a></li>
+				<li><a href="help-view.php">【广告主】如何进行账号充值</a></li>
+				<li><a href="help-view.php">【广告主】广告主云自媒做什么？</a></li>
+				<li><a href="help-view.php">【广告主】云自媒平台如何交易？</a></li>
+				<li><a href="help-view.php">【广告主】云自媒如何保证推广效果？</a></li>
+				<li><a href="help-view.php">【广告主】更多广告主保障服务，全面解决你的投放困惑</a></li>
 			</ul>
 			<div class="page_1 page_1_2" style="margin-top:70px;">
 				<span class="pages">
