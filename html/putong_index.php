@@ -78,7 +78,7 @@
 
 	<!--	图表	-->
 	<div class="tffb radius1 margin_top_40">
-		<h3 class="title1 hide"><strong><a href="#">投放分布</a></strong></h3>
+		<h3 class="title1"><strong><a href="#">投放分布</a></strong></h3>
 		<div class="tffb_m axis" id="tb1">
 		</div>
 	</div>

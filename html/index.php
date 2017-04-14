@@ -70,7 +70,7 @@
 
 	<!--	图表	-->
 	<div class="tffb radius1 margin_top_40">
-		<h3 class="title1 hide"><strong><a href="#">投放分布</a></strong></h3>
+		<h3 class="title1 "><strong><a href="#">投放分布</a></strong></h3>
 		<div class="tffb_m axis" id="tb1">
 		</div>
 	</div>
@@ -175,19 +175,9 @@
 					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
 					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
 					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>昵称</p></a></li>
 				</ul>
 				<ul class="clearfix" style="display:none;">
 					<li><a href="" title="北京新闻网北京新闻网北京新闻网"><img src="/images/pic4.jpg" alt="" /><p>北京新闻网北京新闻网北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
-					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
 					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
 					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>
 					<li><a href="" title=""><img src="/images/pic4.jpg" alt="" /><p>北京新闻网</p></a></li>

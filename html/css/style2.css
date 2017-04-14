@@ -79,7 +79,7 @@ input{	color:#666;	}
 .title1{		aheight:77px;	min-height:75px;	border-bottom:1px solid #E5E5E5;	font-weight:400;	font-size:24px;		color:#333333;		background:#fff;
 	border-radius:6px 6px 0 0;	}
 .title1 strong{	font-weight:400;	float:left;		}
-.title1 strong a{	line-height:76px;		color:#333333;	text-decoration:none;	font-size:24px;	padding-left:23px;	border-left:7px solid #fff;	}
+.title1 strong a{	line-height:76px;		color:#333333;	text-decoration:none;	font-size:24px;	padding-left:23px;	border-left:7px solid #1ab394;	}
 .title1 strong i{	font-style:normal;	font-size:14px;	color:#ff6800;	float:right;	}
 
 #tb1{	width:800px;	height:550px;	margin:50px auto;	padding:0 0 50px;
@@ -1063,16 +1063,16 @@ html .content.fold{	margin-left:70px;	}
 .tab2 ul li a{		font-size:24px;	color:#2f4050;	height:36px;	line-height:36px;	padding:0 10px;	margin-right:3px;	}
 .tab2_body{		padding:18px 25px 11px 22px;	}
 .tab2_body ul{		width:110%;	}
-.tab2_body ul li{		width:88px;	height:110px;	overflow:hidden;	margin:0 10px 0 0;	float:left;	text-align:center;	}
+.tab2_body ul li{		width:17.5%;	height:auto;	overflow:hidden;	margin:0 1% 0 0;	float:left;	text-align:center;	}
 .tab2_body ul li a{		display:block;	font-size:14px;	color:#2f4050;		}
 .tab2_body ul li a:hover{	color:#1ab394;	abackground:#F3F3F4;	}
-.tab2_body ul li a img{	width:72px;	height:72px;	border-radius:72px;	}
-.tab2_body ul li a p{	width:100%;	height:24px;	line-height:24px;	margin:6px 0 0;	overflow:hidden;	}
+.tab2_body ul li a img{	width:72%;	height:auto;	border-radius:72px;	}
+.tab2_body ul li a p{	width:100%;	height:24px;	line-height:20px;	margin:6px 0 6px 0;	overflow:hidden;	}
 
 .title2{	min-height:75px;	border-bottom:1px solid #E5E5E5;	font-weight:400;	font-size:24px;		color:#333333;		background:#fff;
 	border-radius:6px 6px 0 0;	}
 .title2 strong{	font-weight:400;	float:left;		}
-.title2 strong a{	line-height:76px;		color:#1ab394;	text-decoration:none;	font-size:24px;	padding-left:30px;	border-left:0px solid #2C9FDD;	}
+.title2 strong a{	line-height:76px;		color:#1ab394;	text-decoration:none;	font-size:24px;	padding-left:30px;	border-left:7px solid #1ab394;	}
 .title2 strong i{	font-style:normal;	font-size:14px;	color:#ff6800;	float:right;	}
 
 .info_am_r ul li .circle3{	width:110%;	height:177px;	margin:44px auto 0;	text-align:center;	position:relative;	left:-5%;	atop:-70px;	}
