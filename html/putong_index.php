@@ -85,7 +85,7 @@
 	
 	<!--	任务管理	-->
 	<div class="rwgl radius1 margin_top_40 clearfix" style="width:100%;float:none;">
-			<h3 class="title1"><strong><a href="#">任务管理</a></strong></h3>
+			<h3 class="title1"><strong><a href="#">任务管理</a></strong><a href="" class="more">more&gt;&gt;</a></h3>
 			<div class="rwgl_m">
 
 				<div class="tab1_body">
